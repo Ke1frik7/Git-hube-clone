@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.roboto{
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background: rgb(1, 8, 19);
+    overflow-y: hidden;
+}
+.container{
+    width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+header{
+    width: 100%;
+    padding: 1rem;
+}
+.nav{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+form{
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+form input, button{
+    padding: 0.5rem 1rem ;
+    border: 1px solid rgba(128, 128, 128, 0.145);
+    outline: 3px solid transparent;
+    transition: all 0.5s ease;
+    border-radius: 10px;
+    font-size: 18px;
+}
+form input:focus, form button:hover{
+    border: 1px solid transparent;
+    outline: 3px solid rgba(0, 255, 255, 0.57);
+}
+form button{
+    padding: 0.5rem 1rem;
+    margin-left: 1rem;
+}
+.cards{
+    width: 100%;
+    padding-top: 2rem;
+    color: #fff;
+    display: flex;
+
+}
+.cards .card{
+    width: 50%;
+    height: auto;
+    text-align:start;
+}
+.card .card-img-top{
+    border-radius: 50%;
+}
+.card .card-text{
+    padding-top: 1rem;
+    text-align: start;
+}
+.card-text .card-title{
+    font-size: 40px;
+    letter-spacing: 2px;
+}
+.card-text h3{
+    letter-spacing: 3px;
+}
+.card-element{
+    max-width: 60%;
+    text-align: center;
+    padding: 2rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+h4{
+    margin: 0.5rem;
+    letter-spacing: 1px;
+}
+.hero{
+    width: 50%;
+    padding-top: 2rem;
+}
+.hero-align{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.48);
+}
+.hero-card, .hero-card-a{
+    width: 40%;
+    padding: 1rem;
+    background: #fff;
+    color: #000;
+    border-radius: 20px;
+    margin: 1rem;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+.hero-btn{
+    padding-top: 4rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+small{
+    letter-spacing: 1px;
+}
+.card-img-top{
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+}
+.hero-url-repos{
+    width: 50%;
+    padding: 1rem;
+    background: #fff;
+    color: #000;
+    border-radius: 20px;
+    margin: 0 auto;
+    text-decoration: none;
+}
+.text{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    font-size: 35px;
+}
+.text h1{
+    letter-spacing: 3px;
+}
+@media only screen and (max-width: 1020px){
+    .container{
+        max-width: 900px;
+    }
+    .hero-card h2{
+        font-size: 17px;
+    }
+}
+@media  only screen and (max-width: 916px) {
+    .container{
+        max-width: 850px;
+    }
+    body{
+        overflow-y: auto;
+        /* overflow-x: hidden; */
+    }
+    .cards{
+        margin: 0 auto;
+        flex-direction: column;
+    }
+    .card{
+        margin: 0 auto;
+    }
+    .hero{
+        padding: 1rem;
+        margin: 0 auto;
+    }
+}
+@media only screen and (max-width: 883px){
+    .container{
+        max-width: 800px;
+    }
+    .card-title{
+        font-size: 15px;
+    }
+    .hero-card {
+        width: 48%;
+    }
+    .card .card-text{
+        text-align: center;
+    }
+    .card-text .card-title{
+        padding-bottom: 1rem;
+    }
+    .card-element{
+        max-width: 80%;
+        margin: 0 auto;
+    }
+}
+@media only screen and (max-width: 833px){
+    .text h1{
+        font-size: 35px;
+    }
+    .container{
+        max-width: 750px;
+    }
+}
+@media only screen and (max-width: 783px){
+    .container{
+        max-width: 700px;
+    }
+    .hero-card{
+        width: 100%;
+    }
+    .hero-card-a{
+        width: 100%;
+    }
+    .hero-url-repos{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 733px){
+    .container{
+        max-width:650px;
+    }
+    .hero-card{
+        width: 100%;
+    }
+    .hero-card h2{
+        font-size: 17px;
+    }
+    .hero-card-a{
+        width: 100%;
+    }
+    .hero-url-repos{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 683px){
+    .container{
+        max-width: 570px;
+    }
+    .card-img-top{
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+    }
+    .hero-card-a{
+        width: 100%;
+    }
+    .hero-url-repos{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 603px){
+    .container{
+        max-width: 500px;
+    }
+    .card-img-top{
+        width: 270px;
+        height: 270px;
+        object-fit: cover;
+    }
+    .text h1{
+        font-size: 27px;
+    }
+    .hero-card-a{
+        width: 100%;
+    }
+    .hero-url-repos{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 534px){
+    .container{
+        max-width: 450px;
+    }
+    .card-img-top{
+        width: 230px;
+        height: 230px;
+    }
+    .card-text .card-title{
+        font-size: 35px;
+    }
+    .hero{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .card-text{
+        justify-content: flex-start;
+        text-align: start;
+    }
+    .card-element{
+        max-width:100% ;
+        justify-content: flex-start;
+    }
+    .card{
+        width: 100%;
+        /* margin: 0 auto; */
+      
+    }
+    .text h1{
+        font-size: 20px;
+    }
+}
+@media only screen and (max-width: 484px){
+    .container{
+        max-width: 420px;
+    }
+    .card{
+        width: 100%;
+    }
+    .card-img-top{
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+    }
+    
+}
+@media only screen and (max-width: 454px){
+    .container{
+        max-width: 360px;
+    }
+}
+@media only screen and (max-width: 409px){
+    .container{
+        max-width: 330px;
+    }
+    form input , form button{
+        padding: 0.4rem 0.5rem ;
+    }
+    .card-text .card-title{
+        font-size: 23px;
+    }
+    .card-text .card-user{
+        font-size: 18px;
+    }
+    .card-element{
+        max-width: 170px;       
+        margin: 0 auto;
+        justify-content: space-evenly;
+    }
+    .card-img-top{
+        width: 150px;
+        height:150px;
+    }
+}
+@media only screen and (max-width: 375px){
+    .container{
+        max-width: 320px;
+    }
+    form input, form button{
+        padding: 0.2rem ;
+        border-radius: 3px;
+    }
+}
